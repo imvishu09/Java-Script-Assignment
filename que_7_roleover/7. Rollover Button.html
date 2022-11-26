@@ -1,0 +1,19 @@
+    <head>
+       <title> Show image rollover with mouse event. </title>
+    </head>
+    <body>
+       <h2> Showing image rollover with mouse event. </h2>
+       <h4> Rollover on the below image to change the styles of the image. </h4>
+       <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/” style="height:100px;width:100px;"
+    id="demo" name="demo" alt="demo Image">
+       <script>
+          let deomImage = document.getElementById("demo");
+          deomImage.addEventListener( "mouseover", function () {
+             document.demo.style = "height:200px; width:200px";
+          });
+          deomImage.addEventListener( "mouseout", function () {
+             document.demo.style = "height:100px; width:100px;"
+          })
+       </script>
+    </body>
+    </html>
